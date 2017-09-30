@@ -1,0 +1,3 @@
+[submodule "icmaker"]
+	path = icmaker
+	url = https://github.com/risteon/icmaker.git
