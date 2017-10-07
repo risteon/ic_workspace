@@ -9,7 +9,7 @@ compile_commands.json
 CTestTestfile.cmake
 
 # ignore all packages
-packages/*/
+packages
 
 # default build/export folders
 build
