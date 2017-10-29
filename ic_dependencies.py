@@ -12,7 +12,11 @@ from os import path, listdir, makedirs, getcwd
 import argparse
 import json
 # pip: gitpython
-from git import Repo
+try:
+    from git import Repo
+except ImportError:
+    print("gitpython is not available. Try installing it with '$ pip3 install gitpython'", file=sys.stderr)
+    exit(1)
 
 
 PACKAGES_FILE = 'ic_packages_info.json'
